@@ -145,7 +145,9 @@ function main() {
     sendDiscord(hoyoResp);
   }
 
-  scriptProperties.setProperty('last_execution', startExec);
+  if （!error) {
+    scriptProperties.setProperty('last_execution', startExec);
+  }
 }
 
 function discordPing() {
